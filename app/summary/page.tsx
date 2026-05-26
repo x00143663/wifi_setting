@@ -189,7 +189,7 @@ export default function SummaryPage() {
         )}
 
         {/* Actions */}
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 no-print">
           <button
             onClick={() => window.print()}
             className="w-full py-3 bg-emerald-600 text-white font-semibold rounded-xl hover:bg-emerald-700 transition-colors"
@@ -213,15 +213,15 @@ export default function SummaryPage() {
           </button>
         </div>
 
-        <p className="text-center text-xs text-gray-400 pb-4">
+        <p className="text-center text-xs text-gray-400 pb-4 no-print">
           Your settings are saved in this browser. They won't be shared or stored online.
         </p>
       </div>
 
       <style>{`
         @media print {
-          body > *:not(#wifi-card) { display: none; }
-          #wifi-card { border: 2px solid black; padding: 20px; }
+          .no-print { display: none !important; }
+          body { background: white; }
         }
       `}</style>
     </div>
