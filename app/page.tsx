@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ClearDataButton } from '@/components/shared/ClearDataButton'
 
 export default function HomePage() {
   return (
@@ -46,6 +47,7 @@ export default function HomePage() {
         <p className="mt-10 text-xs text-gray-400 max-w-xs">
           Your data never leaves your browser. Nothing is stored on any server.
         </p>
+        <ClearDataButton />
       </main>
     </div>
   )
