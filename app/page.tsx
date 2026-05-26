@@ -21,6 +21,7 @@ export default function HomePage() {
         >
           Start Setup →
         </Link>
+        <ClearDataButton />
 
         <div className="mt-16 w-full max-w-sm">
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">What we cover</p>
@@ -47,7 +48,6 @@ export default function HomePage() {
         <p className="mt-10 text-xs text-gray-400 max-w-xs">
           Your data never leaves your browser. Nothing is stored on any server.
         </p>
-        <ClearDataButton />
       </main>
     </div>
   )
